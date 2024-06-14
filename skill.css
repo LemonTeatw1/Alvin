@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #1f242d;
+    color: #fff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay:calc(.2s*var(--i)) ;
+}
+
+.navbar a:hover{
+    color: #0ef;
+}
+
+.skill{
+    width: 32%;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 650px;
+    border-collapse:collapse;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay:.7s;
+}
+
+.skill, .skill td, .skill th{
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+.skill th{
+    width:150px;
+    background-color:#f2f2f228;
+    text-align: left;
+    font-weight:bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f242d;
+    color: #757474de;
+    margin-top: 550px;
+}
+
+/*KEYFARMS ANIMATION*/
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
