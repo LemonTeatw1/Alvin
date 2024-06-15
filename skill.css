@@ -128,3 +128,49 @@ footer {
         opacity: 1;
     }
 }
+
+/* 手机和小屏幕设备媒体查询 */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .skill {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+}
+
+/* 平板设备媒体查询 */
+@media (max-width: 1024px) {
+    .skill {
+        width: 70%; /* 调整为更适应平板设备的宽度 */
+        margin-left: 20%; /* 调整左边距以居中显示 */
+        font-size: 24px; /* 调整字体大小 */
+        margin-top: 80px; /* 调整上边距 */
+    }
+
+    .header {
+        padding: 15px 5%; /* 调整 header 的 padding */
+    }
+
+    .navbar a {
+        margin-left: 20px; /* 调整 navbar 中链接的 margin */
+    }
+
+    footer {
+        margin-top: 400px; /* 调整 footer 的上边距 */
+    }
+}
