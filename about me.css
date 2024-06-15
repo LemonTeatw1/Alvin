@@ -130,3 +130,48 @@ footer {
         opacity: 1;
     }
 }
+
+/* 媒體查詢調整 */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%; /* 調整 header 的 padding */
+    }
+
+    .navbar a {
+        margin-left: 20px; /* 調整 navbar 中連結的 margin */
+    }
+
+    .about {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px; /* 調整 about 區塊的上邊距 */
+        font-size: 16px; /* 調整 about 區塊的字體大小 */
+    }
+
+    footer {
+        margin-top: 20px; /* 調整 footer 的上邊距 */
+    }
+}
+/* 平板媒體查詢 */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px 5%; /* 調整 header 的 padding */
+    }
+
+    .navbar a {
+        margin-left: 20px; /* 調整 navbar 中連結的 margin */
+    }
+
+    .about {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px; /* 調整 about 區塊的上邊距 */
+        font-size: 18px; /* 調整 about 區塊的字體大小 */
+    }
+
+    footer {
+        margin-top: 20px; /* 調整 footer 的上邊距 */
+    }
+}
